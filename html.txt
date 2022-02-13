@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>draw svg</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div id="board">
+        <svg id="drawSvg"></svg>
+    </div>
+    <div class="controllers">
+        <button id="circle" class="btn">
+            <img src="/imgs/circle.jpg" alt="circle" class="btn__img">
+        </button>
+        <button id="line" class="btn">
+            <img src="/imgs/line.jpg" alt="circle" class="btn__img">
+        </button>
+        <button id="rect" class="btn">
+            <img src="/imgs/rectangular.png" alt="circle" class="btn__img">
+        </button>
+    </div>
+    <script src="/draw.js"></script>
+</body>
+</html>

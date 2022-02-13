@@ -1,0 +1,90 @@
+*,*::before,*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html{
+    font-size: 62.5%;
+
+    /*COLORS*/
+    --blue-color: #2874A6;
+    --wht-color: #FFF;
+}
+
+body{
+    box-sizing: border-box;
+    background-color: var(--blue-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem 0;
+}
+
+#board{
+    height: 65vh;
+    width: 100%;
+    background-color: var(--wht-color);
+    margin: 3rem 0;
+}
+
+.shapes{
+    width: 70%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.btn{
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background-color: var(--wht-color);
+    flex: 0 0 20%;
+    height: 10rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 3rem;
+}
+
+.btn__img{
+    width: 5rem;
+    pointer-events: none;
+}
+
+.controllers{
+    display: flex;
+}
+
+.controllers > *:not(:last-child){
+    margin-right: 1rem;
+}
+
+.control-btn{
+    background-color: var(--wht-color);
+    cursor: pointer;
+    outline: 0;
+    border: 0;
+    color: var(--blue-color);
+    padding: .4rem 1.2rem;
+    border-radius: 1rem;
+}
+
+.active{
+    outline: .4rem solid var(--wht-color);
+    outline-offset: 1rem;
+}
+
+.svgBtn{
+    width: 60px;
+    height: 60px;
+    pointer-events: none;
+}
+
+
+#drawSvg{
+    width: 100%;
+    height: 100%;
+}

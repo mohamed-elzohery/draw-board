@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>draw svg</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="controllers">
+        <button class="control-btn reset">reset</button>
+        <button class="control-btn undo">undo</button>
+        <button class="control-btn redo">redo</button>
+        <input type="color" value="#000000" id="color">
+    </div>
+    <div id="board">
+        <svg id="drawSvg"></svg>
+    </div>
+    <div class="shapes">
+        <button id="path" class="btn" title="path">
+            <svg class="svgBtn">
+                <path d="M 0 30 C 15 -40, 20 40, 25 20 S 40 40, 60 30" stroke="black" fill="transparent" id="path-label"/> 
+            </svg>
+        </button>
+        <button id="circle" class="btn active" title="circle">
+            <svg class="svgBtn">
+                <circle cx="30" cy="30" fill="#000000" r="30" id="circle-label"></circle>
+            </svg>
+        </button>
+        <button id="line" class="btn" title="line">
+            <svg class="svgBtn">
+                <line x1="0" y1="30" x2="60" y2="30" stroke="#000000" id="line-label"></line>
+            </svg>
+        </button>
+        <button id="rect" class="btn" title="rectangular">
+            <svg class="svgBtn">
+                <rect x="0" y="15" width="60" height="30" style="fill: rgb(0, 0, 0);" id="rect-label"></rect>
+            </svg>
+        </button>
+    </div>
+    <script src="/draw.js"></script>
+</body>
+</html>
